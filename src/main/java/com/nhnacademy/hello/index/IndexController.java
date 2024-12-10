@@ -14,7 +14,8 @@ public class IndexController {
         if(ip == null ){
             ip = request.getRemoteAddr();
         }
-        model.addAttribute("ip",ip);
+        model.addAttribute("xip",ip);
+        model.addAttribute("url",request.getRequestURI());
         return "index/index";
     }
 }
