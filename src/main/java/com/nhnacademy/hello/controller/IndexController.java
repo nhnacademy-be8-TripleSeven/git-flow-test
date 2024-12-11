@@ -1,10 +1,10 @@
-package com.nhnacademy.hello.index;
+package com.nhnacademy.hello.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class IndexController {
@@ -14,7 +14,7 @@ public class IndexController {
         if(ip == null ){
             ip = request.getRemoteAddr();
         }
-        model.addAttribute("xip",ip);
+        model.addAttribute("ip",ip);
         model.addAttribute("url",request.getRequestURI());
         return "index/index";
     }
