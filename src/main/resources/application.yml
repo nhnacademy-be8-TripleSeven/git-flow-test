@@ -3,6 +3,10 @@ spring:
     name: front-api
   profiles:
     active: prod
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
 
 
 eureka:
