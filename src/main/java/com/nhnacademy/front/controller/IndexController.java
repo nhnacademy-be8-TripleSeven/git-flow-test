@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class IndexController {
-    @GetMapping(value = {"/index.html","/"})
-    public String index(HttpServletRequest request, ModelMap model){
+    @GetMapping(value = {"/index.html", "/"})
+    public String index(HttpServletRequest request, ModelMap model) {
         String ip = request.getHeader("x-forwarded-for");
-        if(ip == null ){
+        if (ip == null) {
             ip = request.getRemoteAddr();
         }
-        model.addAttribute("ip",ip);
-        model.addAttribute("url",request.getRequestURI());
+        model.addAttribute("ip", ip);
+        model.addAttribute("url", request.getRequestURI());
         return "index/index";
     }
 }

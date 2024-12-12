@@ -6,12 +6,14 @@
     </head>
     <body>
         <h1>hello spring!!</h1>
-    <h2 >ip</h2><p th:text="${ip}"></p>
+    <h2 >ip</h2>
+        <p th:text="${ip}"></p>
         <p th:text="${url}"></p>
-    <form action="/api/members">
-        <button>
-            members button
-        </button>
-    </form>
+        <h2>Members Button</h2>
+        <form action="/api/members?id=1" method="get">
+            <button type="submit">
+                Button
+            </button>
+        </form>
     </body>
 </html>

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class TestApiService {
     private final TestApiFeignClient testApiFeignClient;
 
-    public Member getMember(Long id){
+    public Member getMember(Long id) {
         return testApiFeignClient.getMember(id);
     }
 }

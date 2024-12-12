@@ -13,7 +13,7 @@ public class TestApiController {
     private final TestApiService testApiService;
 
     @GetMapping("/api/members")
-    public Member getMember(@RequestParam Long id){
+    public Member getMember(@RequestParam Long id) {
         return testApiService.getMember(id);
     }
 }
