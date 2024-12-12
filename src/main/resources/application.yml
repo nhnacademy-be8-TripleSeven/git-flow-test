@@ -10,6 +10,6 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://admin:1234@localhost:8761/eureka
+      defaultZone: http://admin:1234@eureka-server:8761/eureka
     instance:
       prefer-ip-address: true
