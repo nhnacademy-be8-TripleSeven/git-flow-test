@@ -8,9 +8,9 @@
         <h1>hello spring!!</h1>
     <h2 >ip</h2>
         <p th:text="${ip}"></p>
-        <p th:text="${url}"></p>
         <h2>Members Button</h2>
-        <form action="/api/members?id=1" method="get">
+        <form action="/api/members" method="get">
+            <input type="hidden" name="id" value="1" />
             <button type="submit">
                 Button
             </button>
