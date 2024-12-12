@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+eureka:
+  instance:
+    instance-id: member-api-1
+    hostname: localhost

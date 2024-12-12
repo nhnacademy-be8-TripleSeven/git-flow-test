@@ -63,7 +63,7 @@ jobs:
               docker stop front-server-instance-1 || true
               docker rm -f front-server-instance-1 || true
             fi
-              docker run --name front-server-instance-1 --network nhn-book-store-network -p 8080:8080 -d lushlife99/nhn-front:${{ github.sha }}
+              docker run --name front-server-instance-1 --network nhn-book-store-network -p 8080:8080 -e SPRING_PROFILES_ACTIVE=instance1 -d lushlife99/nhn-front:${{ github.sha }}
 
 
 
@@ -79,4 +79,4 @@ jobs:
               docker stop front-server-instance-2 || true
               docker rm -f front-server-instance-2 || true
             fi
-              docker run --name front-server-instance-2 --network nhn-book-store-network -p 8081:8081 -d lushlife99/nhn-front:${{ github.sha }}
+              docker run --name front-server-instance-2 --network nhn-book-store-network -p 8081:8081 -e SPRING_PROFILES_ACTIVE=instance2 -d lushlife99/nhn-front:${{ github.sha }}
