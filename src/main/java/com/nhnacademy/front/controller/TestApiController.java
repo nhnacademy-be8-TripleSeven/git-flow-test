@@ -1,7 +1,7 @@
-package com.nhnacademy.hello.controller;
+package com.nhnacademy.front.controller;
 
-import com.nhnacademy.hello.domain.Member;
-import com.nhnacademy.hello.service.TestApiService;
+import com.nhnacademy.front.domain.Member;
+import com.nhnacademy.front.service.TestApiService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

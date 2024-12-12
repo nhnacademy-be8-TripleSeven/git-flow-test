@@ -1,6 +1,6 @@
-package com.nhnacademy.hello.client;
+package com.nhnacademy.front.client;
 
-import com.nhnacademy.hello.domain.Member;
+import com.nhnacademy.front.domain.Member;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

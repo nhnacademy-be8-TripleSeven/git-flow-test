@@ -1,4 +1,4 @@
-package com.nhnacademy.hello;
+package com.nhnacademy.front;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class HelloApplication {
+public class FrontApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloApplication.class, args);
+        SpringApplication.run(FrontApplication.class, args);
     }
 
 }

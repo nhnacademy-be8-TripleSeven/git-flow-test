@@ -1,4 +1,4 @@
-package com.nhnacademy.hello.controller;
+package com.nhnacademy.front.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;

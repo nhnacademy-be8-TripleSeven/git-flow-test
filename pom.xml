@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nhnacademy</groupId>
-    <artifactId>hello</artifactId>
+    <artifactId>front</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hello</name>
-    <description>hello</description>
+    <name>front</name>
+    <description>front</description>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -76,7 +76,7 @@
     </dependencies>
 
     <build>
-        <finalName>hello</finalName>
+        <finalName>front</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

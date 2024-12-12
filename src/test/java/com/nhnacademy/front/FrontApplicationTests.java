@@ -1,10 +1,10 @@
-package com.nhnacademy.hello;
+package com.nhnacademy.front;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloApplicationTests {
+class FrontApplicationTests {
 
     @Test
     void contextLoads() {

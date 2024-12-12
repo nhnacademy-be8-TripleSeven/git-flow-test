@@ -1,4 +1,4 @@
-package com.nhnacademy.hello.domain;
+package com.nhnacademy.front.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
