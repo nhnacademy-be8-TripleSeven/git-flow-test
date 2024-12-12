@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(name = "gateway")
 public interface TestApiFeignClient {
-    @GetMapping("/api/members")
+    @GetMapping("/members")
     Member getMember(@RequestParam Long id);
 }
