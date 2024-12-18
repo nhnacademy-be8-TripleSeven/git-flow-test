@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class StoreController {
 
     @GetMapping("/frontend/store/main")
-    public String storeMain() {
+    public String getMainPage() {
         return "/store/main";
     }
 
     @GetMapping("/frontend/store/books/search")
-    public String bookSearch() {
+    public String searchBook() {
         return "/store/book/search";
     }
 
     @GetMapping("/frontend/store/books/{bookId}/details")
-    public String bookDetails(@PathVariable Long bookId) {
+    public String getBookDetails(@PathVariable Long bookId) {
         return "/store/book/detail";
     }
 
