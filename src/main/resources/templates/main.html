@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-<!-- 헤더 -->
 <header class="header">
     <div class="logo">
-        <a href="index.html"> <img src="/image/logo/nhn24-logo.png" alt="NHN 24 로고"></a>
+        <a href="main.html"><img src="/image/logo/nhn24-logo.png" alt="NHN 24 로고"></a>
     </div>
-    <div class="search-bar">
-        <input type="text" placeholder=" ">
-        <button>:mag:</button>ç
+    <div class="header-center">
+        <div class="search-bar">
+            <label>
+                <input type="text" placeholder="검색어를 입력하세요">
+            </label>
+            <button>🔍</button>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="/recommended-books.html">추천 도서</a></li>
+                <li><a href="/domestic-books.html">국내 도서</a></li>
+                <li><a href="/foreign-books.html">외국 도서</a></li>
+                <li><a href="/bestsellers.html">베스트셀러</a></li>
+                <li><a href="/new-books.html">신간 소개</a></li>
+                <li><a href="/events.html">이벤트</a></li>
+            </ul>
+        </nav>
     </div>
     <div class="user-actions">
         <img src="/image/emoji/person.png" alt="User Icon">
         <img src="/image/emoji/cart.png" alt="Cart Icon">
-        <button class="login-btn">Login</button>
+        <a href="login-succes.html"><button class="login-btn">Login</button></a>
     </div>
 </header>
 
@@ -28,31 +41,25 @@
 <section class="best-section">
     <h2>이 달의 베스트</h2>
     <div class="slider">
-        <button class="arrow left">:arrow_backward:</button>
+        <button class="arrow left">◀</button>
         <div class="slides">
             <div class="slide"><img src="book1.png" alt="book1"><p>달러구트 꿈 백화점</p></div>
             <div class="slide"><img src="book2.png" alt="book2"><p>카이로스</p></div>
             <div class="slide"><img src="book3.png" alt="book3"><p>오! 방울토마토</p></div>
         </div>
-        <button class="arrow right">:arrow_forward:</button>
+        <button class="arrow right">▶</button>
     </div>
 </section>
 
-<!-- 이 도서는 어떠세요? 후에 데이터랑 연결해야함-->
+<!-- 이 도서는 어때요? -->
 <section class="recommended">
     <h2>이 도서는 어때요?</h2>
     <div class="book-grid1">
         <div class="book-item"><img src="book4.png" alt="book4"><p>서론에 읽는 프로이트</p></div>
         <div class="book-item"><img src="book5.png" alt="book5"><p>푸드 앤 와인 페어링</p></div>
         <div class="book-item"><img src="book6.png" alt="book6"><p>국어 문법 완벽 세트</p></div>
-        <div class="book-item"><img src="book4.png" alt="book4"><p>서론에 읽는 프로이트</p></div>
-        <div class="book-item"><img src="book5.png" alt="book5"><p>푸드 앤 와인 페어링</p></div>
-        <div class="book-item"><img src="book6.png" alt="book6"><p>국어 문법 완벽 세트</p></div>
-
     </div>
-
 </section>
-
 
 <!-- 편집자의 선택 섹션 -->
 <section class="editor-choice">
@@ -63,7 +70,6 @@
             <button class="tab" data-tab="tab3">외국도서</button>
         </div>
     </div>
-
     <div class="book-grid">
         <div class="book-item">
             <img src="book1.png" alt="book1">
@@ -80,13 +86,7 @@
             <p class="title">베아</p>
             <p>두려움은 도전의 증거.</p>
         </div>
-        <div class="book-item">
-            <img src="book4.png" alt="book4">
-            <p class="title">좋아하는 마음 없이</p>
-            <p>2025년 현대문학상 수상.</p>
-        </div>
     </div>
-
 </section>
 
 <!-- 공지사항, 검색, 빠른 서비스 -->
@@ -99,12 +99,11 @@
             <li>전자책 PC뷰어 설정 안내</li>
         </ul>
     </div>
-
     <div class="search">
         <h3>검색</h3>
         <div class="search-bar">
             <input type="text" placeholder="검색어 입력">
-            <button>:mag:</button>
+            <button>🔍</button>
         </div>
         <div class="search-options">
             <label>
@@ -117,7 +116,6 @@
             </label>
         </div>
     </div>
-
     <div class="quick-service">
         <h3>빠른 서비스</h3>
         <p>반품/교환</p>
@@ -142,7 +140,7 @@
     </div>
 </section>
 
-
+<!-- 푸터 -->
 <footer>
     <div class="footer-links">
         <a href="#">회사소개</a>
@@ -155,7 +153,7 @@
             <p>대표이사 마르코 | 사업자등록번호 123-456-7890</p>
             <p>통신판매업신고 2024-광주동구-01211</p>
             <p>이메일: marco@nhn.com | 호스팅 제공자 NHN24</p>
-            <p>:copyright: NHN24. All Rights Reserved.</p>
+            <p>© NHN24. All Rights Reserved.</p>
         </div>
         <div class="customer-center">
             <p><strong>고객센터 1544-8282 (발신자 부담)</strong></p>
@@ -169,7 +167,6 @@
         </div>
     </div>
 </footer>
-<!--<script src="/js/main.js"></script>-->
-
+<script src="/js/main.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class IndexController {
-    @GetMapping(value = {"/index.html", "/"})
+    @GetMapping(value = {"/main.html", "/"})
     public String index(HttpServletRequest request, ModelMap model) {
         String ip = request.getHeader("x-forwarded-for");
         if (ip == null) {
@@ -16,6 +16,6 @@ public class IndexController {
         }
         model.addAttribute("ip", ip);
         model.addAttribute("url", request.getRequestURI());
-        return "index/index";
+        return "main";
     }
 }

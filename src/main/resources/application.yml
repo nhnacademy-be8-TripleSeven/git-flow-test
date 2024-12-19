@@ -5,13 +5,3 @@ spring:
     loadbalancer:
       retry:
         enabled: true
-
-
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: http://admin:1234@eureka-server:8761/eureka
-    instance:
-      prefer-ip-address: true
