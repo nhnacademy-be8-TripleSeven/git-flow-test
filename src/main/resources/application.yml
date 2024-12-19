@@ -1,8 +1,6 @@
 spring:
   application:
     name: front-api
-  profiles:
-    active: prod
   cloud:
     loadbalancer:
       retry:

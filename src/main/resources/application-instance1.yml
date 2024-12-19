@@ -3,5 +3,5 @@ server:
 
 eureka:
   instance:
-    instance-id: member-api-1
+    instance-id: front-api-1
     hostname: localhost
