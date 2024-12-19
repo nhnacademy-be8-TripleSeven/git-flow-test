@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: front-api
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+
+management:
+  health:
+    status:
+      order: DOWN, UP
+  endpoint:
+    jolokia:
+      enable: true
+    pause:
+      enabled: true
+    resume:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    instance-id: front-api
+    hostname: localhost
+    prefer-ip-address: true
+
+  client:
+    fetch-registry: true
+    register-with-eureka: true
